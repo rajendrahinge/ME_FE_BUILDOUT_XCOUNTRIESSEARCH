@@ -48,10 +48,10 @@ function App() {
       </div>
       <div className="container">
         {countries.map((item, index) => (
-          <div className="items">
+          <div className="items countryCard">
             <span>
               <img src={item.flags.png} alt={item.flags.alt} />
-              <h5>{item.name.common}</h5>
+              <div>{item.name.common}</div>
             </span>
           </div>
         ))}
